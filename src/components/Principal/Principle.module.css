@@ -1,0 +1,28 @@
+.principleCardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  row-gap: 5rem;
+  padding: 5rem 0rem;
+}
+
+.principleHeadText {
+  text-align: center;
+  color: var(--primary-color);
+  padding-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 756px) {
+  .principleCardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .principleCardContainer {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}

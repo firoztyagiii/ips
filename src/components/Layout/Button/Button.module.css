@@ -1,0 +1,7 @@
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+}

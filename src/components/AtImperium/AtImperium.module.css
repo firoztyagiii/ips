@@ -1,0 +1,110 @@
+.imperium {
+  background-color: #fbf7ed;
+  padding: 10rem 0rem;
+}
+
+.imperiumContainer {
+  display: grid;
+  grid-template-columns: 40% 70%;
+  height: 100%;
+  align-content: center;
+}
+
+.imperiumLeft {
+  width: 100%;
+  height: 40rem;
+}
+
+.imperiumLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.imperiumRight {
+  z-index: 5;
+  align-self: center;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-left: -5rem;
+  padding: 5rem 3rem;
+}
+
+.imperiumRightTab {
+  display: flex;
+  align-items: stretch;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.imperiumRight button {
+  background-color: #2b8473;
+  font-size: 1rem;
+  color: #fbf7ed;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.imperiumRight h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.imperiumRight ul li p {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .imperiumContainer {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .imperiumContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .imperiumRight {
+    margin-left: 0rem;
+  }
+
+  .imperiumLeft {
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .imperium {
+    padding: 5rem 0rem;
+  }
+  .imperiumLeft {
+    width: 100%;
+  }
+
+  .imperiumRightTab {
+    display: none;
+  }
+
+  .imperiumRight {
+    padding: 1.5rem;
+  }
+
+  .imperiumRight h2 {
+    font-size: 1.8rem;
+  }
+
+  .imperiumRight ul li p {
+    font-size: 1.2rem;
+  }
+}

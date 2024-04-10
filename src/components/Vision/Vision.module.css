@@ -1,0 +1,108 @@
+.vision {
+  padding: 5rem 0rem 0rem 0rem;
+}
+
+.vision h2 {
+  text-align: center;
+  color: var(--primary-color);
+  padding-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 3rem;
+}
+.visionCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.visionCardLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fc;
+  padding: 15rem 0rem;
+}
+
+.visionCardLeftTextContainer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.visionCardLeftTextContainer h2 {
+  position: relative;
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.visionCardLeftTextContainer h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: #3ca78cda;
+  height: 5px;
+  width: 80%;
+}
+
+.visionCardLeftTextContainer p {
+  color: var(--text-color);
+  margin: 2rem 0rem;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+
+.visionCardLeftTextContainer button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+.visionCardRight1 {
+  background-image: url("../../assets/img/mission.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.visionCardRight2 {
+  background-image: url("../../assets/img/motto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.visionCardRight3 {
+  background-image: url("../../assets/img/vision.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 992px) {
+  .visionCard {
+    grid-template-columns: 1fr;
+  }
+  .visionCardLeft {
+    padding: 4rem 0rem 5rem 0rem;
+  }
+
+  .visionCardLeftTextContainer {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+
+  .visionCardRight1,
+  .visionCardRight2,
+  .visionCardRight3 {
+    height: 30rem;
+  }
+
+  .vision h2 {
+    padding-top: 3rem;
+  }
+  .visionCard2 {
+    grid-row: 1/2;
+  }
+}

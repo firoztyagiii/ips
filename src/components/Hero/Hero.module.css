@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+.hero {
+  position: relative;
+  min-height: 50rem;
+  background-image: url("../../assets/img/hero-img.jpeg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.heroOverLay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 35%,
+    rgba(255, 255, 255, 0.51) 56%,
+    rgba(255, 255, 255, 0) 78%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.heroText {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+}
+
+.heroHead {
+  /* position: relative; */
+  font-family: "Lora", serif;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  padding-top: 10rem;
+  font-weight: 600;
+}
+
+.heroSub {
+  font-size: 1.2rem;
+  margin: 2rem 0rem;
+  color: #000;
+}
+
+@media only screen and (max-width: 992px) {
+  .heroHead {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heroText {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    background-position: left;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .heroHead {
+    padding-top: 6rem;
+  }
+  .heroSub {
+    font-size: 1.25rem;
+  }
+}
