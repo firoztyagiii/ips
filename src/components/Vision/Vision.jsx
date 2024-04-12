@@ -3,7 +3,7 @@ import styles from "./Vision.module.css";
 const Vision = () => {
   return (
     <section className={styles.vision}>
-      <div className={styles.visionCard}>
+      <div id="our-vision" className={styles.visionCard}>
         <div className={styles.visionCardLeft}>
           <div
             data-aos="fade-right"
@@ -17,7 +17,7 @@ const Vision = () => {
               To provide all our students with the tools and strategies to
               become life long learners and succeed in the global environment.
             </p>
-            <button>Read our Story</button>
+            <a href="#about-us">Read our Story</a>
           </div>
         </div>
         <div
@@ -28,7 +28,7 @@ const Vision = () => {
           className={styles.visionCardRight1}
         ></div>
       </div>
-      <div className={`${styles.visionCard} `}>
+      <div id="our-mission" className={`${styles.visionCard} `}>
         <div
           data-aos="fade-right"
           data-aos-duration="800"
@@ -51,11 +51,11 @@ const Vision = () => {
               different strengths of all our learners and preparing them well
               for the future.
             </p>
-            <button>Read our Story</button>
+            <a href="#about-us">Read our Story</a>
           </div>
         </div>
       </div>
-      <div className={styles.visionCard}>
+      <div id="our-motto" className={styles.visionCard}>
         <div className={styles.visionCardLeft}>
           <div
             data-aos="fade-right"
@@ -70,7 +70,7 @@ const Vision = () => {
               our school to have. Vincere Somnium (Latin) translates to Dream to
               Win.
             </p>
-            <button>Read our Story</button>
+            <a href="#about-us">Read our Story</a>
           </div>
         </div>
         <div

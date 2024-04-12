@@ -23,7 +23,7 @@ const Hero = () => {
               together to meet the intellectual, social, behavioral, and
               emotional needs of each and every child we serve.
             </p>
-            <Button>Read More</Button>
+            <Button href="#principle">Read More</Button>
           </div>
         </div>
       </Row>

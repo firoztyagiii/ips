@@ -3,7 +3,7 @@ import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {
   return (
-    <section className={styles.aboutUs}>
+    <section id="about-us" className={styles.aboutUs}>
       <div className={styles.overLay}></div>
       <Row>
         <div

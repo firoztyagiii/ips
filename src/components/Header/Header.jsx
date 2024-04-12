@@ -13,10 +13,66 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import logo from "../../assets/img/ips-logo.png";
 
 import Button from "../Layout/Button/Button";
+import { useEffect, useState } from "react";
+import Footer from "../Footer/Footer";
 
 const Header = () => {
+  const [showHeader, setShowHeader] = useState(false);
+
+  useEffect(() => {
+    if (showHeader) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "visible";
+    }
+  }, [showHeader]);
+
+  const hambugerHandler = () => {
+    setShowHeader(false);
+  };
+
   return (
-    <header>
+    <header id="home">
+      <div
+        style={{
+          transform: showHeader && "translateX(0%)",
+        }}
+        className={styles.headerHambugerMenu}
+      >
+        <div onClick={hambugerHandler} className={styles.hamburgerContainer}>
+          <div className={styles.hamburgerSocials}>
+            <span>
+              <FaFacebookF></FaFacebookF>
+            </span>
+            <span>
+              <FaInstagram></FaInstagram>
+            </span>
+            <span>
+              <FaTwitter></FaTwitter>
+            </span>
+          </div>
+          <div className={styles.HambugerNav}>
+            <ul className={styles.hamburgerNavList}>
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#about-us">About Us</a>
+              </li>
+              <li>
+                <a href="#our-mission">Our Mission</a>
+              </li>
+              <li>
+                <a href="#our-vision">Our Vision</a>
+              </li>
+              <li>
+                <a href="#our-motto">Motto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.headerMain}>
         <Row>
           <div className={styles.headerMainItem}>
@@ -45,29 +101,36 @@ const Header = () => {
       <Row>
         <div className={styles.headerNav}>
           <div className={styles.headerNavLogo}>
-            <img src={logo} alt="" />
+            <a href="#home">
+              <img src={logo} alt="Logo" />
+            </a>
           </div>
           <ul className={styles.headerNavList}>
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#about-us">About Us</a>
             </li>
             <li>
-              <a href="#">Our Mission</a>
+              <a href="#our-mission">Our Mission</a>
             </li>
             <li>
-              <a href="#">Our Vision</a>
+              <a href="#our-vision">Our Vision</a>
             </li>
             <li>
-              <a href="#">Motto</a>
+              <a href="#our-motto">Motto</a>
             </li>
           </ul>
           <div className={styles.headerBtn}>
             <Button>ADMISSION OPEN</Button>
           </div>
-          <div className={styles.headerHamburger}>
+          <div
+            onClick={() => {
+              setShowHeader((prev) => !prev);
+            }}
+            className={styles.headerHamburger}
+          >
             <GiHamburgerMenu></GiHamburgerMenu>
           </div>
         </div>

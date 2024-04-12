@@ -11,7 +11,7 @@ import { SiGoogleclassroom } from "react-icons/si";
 
 const Principle = () => {
   return (
-    <section className={styles.principle}>
+    <section id="principle" className={styles.principle}>
       <h2 className={styles.principleHeadText}>Founding Principles</h2>
       <Row>
         <div

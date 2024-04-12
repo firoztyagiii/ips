@@ -4,14 +4,14 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div
-        data-aos="fade-up"
-        data-aos-duration="800"
-        data-aos-once="true"
-        data-aos-delay="300"
-        className={styles.footerContainer}
-      >
-        <div className={styles.headerSocials}>
+      <div className={styles.footerContainer}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-once="true"
+          data-aos-delay="300"
+          className={styles.headerSocials}
+        >
           <span>
             <FaFacebookF></FaFacebookF>
           </span>
@@ -22,22 +22,28 @@ const Footer = () => {
             <FaTwitter></FaTwitter>
           </span>
         </div>
-        <div className={styles.footerNav}>
+        <div
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-once="true"
+          data-aos-delay="300"
+          className={styles.footerNav}
+        >
           <ul className={styles.footerNavList}>
             <li>
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#about-us">About Us</a>
             </li>
             <li>
-              <a href="#">Our Mission</a>
+              <a href="#our-mission">Our Mission</a>
             </li>
             <li>
-              <a href="#">Our Vision</a>
+              <a href="#our-vision">Our Vision</a>
             </li>
             <li>
-              <a href="#">Motto</a>
+              <a href="#our-motto">Motto</a>
             </li>
           </ul>
         </div>
